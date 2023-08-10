@@ -86,16 +86,15 @@
             color: #fff;
             box-shadow: 0 3px 4.7px 0.3px rgb(0 0 0 / 8%);
             transition: .4s;
-           
+            
         }
-           .login-content .input-group>.form-control, .login-content .input-group>.form-select {
+         .login-content .input-group>.form-control, .login-content .input-group>.form-select {
             min-width: 275px;
          }
-         #buttonLogin{
+        #buttonRegister {
             width: 100%;
-            padding: 0 37px;
-         }
-        #buttonLogin:hover{
+        }
+        #buttonRegister:hover{
             border: 1px solid #d80027;
             background: #fff;
             color: #d80027;
@@ -379,7 +378,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <strong itemprop="name">Đăng nhập</strong>
+                                    <strong itemprop="name">Đăng ký</strong>
                                     <meta content="2" itemprop="position">
                                 </li>
                             </ul>
@@ -390,7 +389,7 @@
                             <div class="d-flex justify-content-center background-login">
                                 <div class="row justify-content-center">
                                     <div class="col login-content">
-                                        <h4 class="mb-4 color title-login">Đăng nhập</h4>
+                                        <h4 class="mb-4 color title-login">Đăng ký</h4>
                                         <form>
                                             <input type="hidden" name="_token" value="yJz46ndWPeTMxd72G3hK7V6EFBrPOgtTCBryMwAG">
                                             <div class="form-group errorA" style="margin-bottom: 0; display:none">
@@ -408,16 +407,19 @@
                                                 <img class="icon-a" src="assets/image/locked.png">
                                                 <input type="password" name="password" required="" class="form-control" style="margin-left: 0!important" placeholder="Mật khẩu">
                                             </div>
-                                         
+                                            <div class="input-group mb-3 box-input">
+                                                <img class="icon-a" src="assets/image/locked.png">
+                                                <input type="password" name="confirm_password" required="" class="form-control" style="margin-left: 0!important" placeholder="Nhập lại mật khẩu">
+                                            </div>
+                                            
                                             <div class="form-button d-flex">
-                                               <!--  <a class="" href="" style="    vertical-align: middle; margin-top: 17px; font-size: 16px;">Quên mật khẩu?</a> -->
-                                                <button id="buttonLogin" type="button" class="ms-auto button btn btn-large btn-rounded btn-gradient">Đăng nhập</button>
+                                                <button id="buttonRegister" type="button" class="ms-auto button full-wight">Đăng ký</button>
                                             </div>
                                             <div class="text-center">
                                                 <br>
                                                 <br>
                                                 <br>
-                                                <p>Bạn chưa có tài khoản ? <span><b><a class="color " style="" href="#">Đăng ký</a></b></span>
+                                                <p>Bạn đã có tài khoản ? <span><b><a class="color" href="#">Đăng nhập</a></b></span>
                                                 </p>
                                             </div>
                                         </form>
