@@ -107,6 +107,9 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
+    $('body').on('click', ' .evo-header-mobile .evo-wish-list .js-wishlist-link', function() {
+            $('.evo-header-mobile .evo-wish-list  .top-wish-list-content').toggle();
+    });
 });
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
